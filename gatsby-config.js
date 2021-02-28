@@ -3,9 +3,24 @@ module.exports = {
     title: `Qualtrics API Docs`,
     description: `The official Qualtrics API documentation.`,
     author: `@qualtrics`,
+    siteUrl: 'https://audies.github.io/PublicAPIDocsHostingV2/'
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://audies.github.io/PublicAPIDocsHostingV2/',
+        env: {
+          development: {
+            policy: [{ userAgent: '*', disallow: '/' }]
+          },
+          production: {
+            policy: [{ userAgent: '*', disallow: '/' }]
+          }
+        }
+      }
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
