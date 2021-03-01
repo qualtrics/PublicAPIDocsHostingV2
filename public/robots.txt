@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /
+Sitemap: https://audies.github.io/sitemap.xml
+Host: https://audies.github.io
