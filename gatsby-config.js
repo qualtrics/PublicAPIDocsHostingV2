@@ -2,15 +2,14 @@ module.exports = {
   siteMetadata: {
     title: `Qualtrics API Docs`,
     description: `The official Qualtrics API documentation.`,
-    author: `@qualtrics`,
-    siteUrl: 'https://audies.github.io/PublicAPIDocsHostingV2/'
+    author: `@qualtrics`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: 'https://audies.github.io/PublicAPIDocsHostingV2/',
+        host: 'https://api-test.qualtrics.com',
         env: {
           development: {
             policy: [{ userAgent: '*', disallow: '/' }]
