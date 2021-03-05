@@ -2,7 +2,8 @@ module.exports = {
   siteMetadata: {
     title: `Qualtrics API Docs`,
     description: `The official Qualtrics API documentation.`,
-    author: `@qualtrics`
+    author: `@qualtrics`,
+    siteUrl: 'https://api-test.qualtrics.com'
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
